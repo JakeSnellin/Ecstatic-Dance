@@ -1,8 +1,11 @@
-
 .container{
     display: flex;
-    justify-content: center;
-    margin: 10px 0;
+    max-width: 580px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: flex-start;
+    gap: 30px;
 }
 
 div.outer {
@@ -11,7 +14,6 @@ div.outer {
     display: inline-flex;
     height: 100px;
     width: 100px;
-    padding: 10px;
   }
 
 
@@ -103,49 +105,6 @@ div.outer {
     width: 100%;
     animation: fourth_anim 300ms ease-in-out infinite alternate;
   }
-
-
-  /*div.inner_rotate{
-    height: 50%;
-    width: 100%;
-    /*border: 1px solid red;
-  }
-  
-  div.outer div.inner_rotate:nth-child(1){
-    border-top: 4px solid black;
-    transform: rotate(-10deg);
-    width: 100%;
-  }
-
-  div.outer div.inner_rotate:nth-child(2){
-    border-top: 2px solid black;
-    transform: rotate(-20deg);
-    width: 80%;
-  }
-
-  div.outer div.inner_rotate:nth-child(3){
-    border-top: 2px solid black;
-    transform: rotate(10deg);
-    width: 60%;
-  }
-
-  div.outer div.inner_rotate:nth-child(4){
-    border-top: 8px solid black;
-    transform: rotate(6deg);
-    width: 50%;
-  }
-  
-
-  @keyframes rotate_negative{
-    0% {transform: rotate(0);}
-    100%{transform: rotate(-12deg);}
-  }
-
-  
-  @keyframes rotate_positive{
-    0% {transform: rotate(0);}
-    100%{transform: rotate(12deg);}
-  }*/
 
   @keyframes first_anim{
     0% {height: 100%; transform: rotate(0);}
