@@ -1,6 +1,60 @@
+.stroke_blue_thin{
+  animation: translateTop 300ms ease-in-out infinite alternate;
+  transform-origin: left;
+}
+
+.stroke_dark_thick{
+  animation: translateUpperMiddle 300ms ease-in-out infinite alternate;
+  transform-origin: left;
+}
+
+.stroke_light_thin{
+  animation: translateLowerMiddle 300ms ease-in-out infinite alternate;
+  transform-origin: left;
+}
+
+.stroke_light_thick{
+  animation: translateBottom 300ms ease-in-out infinite alternate;
+  transform-origin: left;
+}
+
+rect.strokes_background{
+  fill: none;
+}
+
+.stroke_animation{
+  overflow: visible;
+}
+
+body{
+  background: rgb(255, 222, 222);
+}
+
+
+@keyframes translateTop{
+  0% {transform: translateY(0) rotate(0);}
+  100% {transform: translateY(60%) rotate(20deg);}
+}
+
+@keyframes translateUpperMiddle{
+  0% {transform: translateY(0) rotate(0);}
+  100% {transform: translateY(40%) rotate(20deg);}
+}
+
+@keyframes translateLowerMiddle{
+  0% {transform: translateY(0) rotate(0);}
+  100% {transform: translateY(20%) rotate(20deg);}
+}
+
+@keyframes translateBottom{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(20deg);}
+}
+
+
 .container{
     display: flex;
-    max-width: 580px;
+    max-width: 1120px;
     flex-wrap: wrap;
     margin: 0 auto;
     margin-top: 50px;
